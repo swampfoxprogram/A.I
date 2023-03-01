@@ -1,0 +1,22 @@
+import webbrowser as web
+
+class tony():
+    
+    print("hello")
+    def AI():
+        
+        type = input()
+       
+        if 'search' == type:
+            global mysearch 
+            mysearch = input()
+            search = web.open_new('https://www.google.com/search?q='+ mysearch)
+            print(search)
+        if 'query' == type:
+            url = input()
+            query =web.open_new("www."+url+".com")
+            print(query)
+        
+for i in range(1000):
+    tony.AI()
+    
